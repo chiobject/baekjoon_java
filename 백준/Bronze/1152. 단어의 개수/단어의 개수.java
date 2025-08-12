@@ -6,11 +6,17 @@ class Main{
     public static void main(String args[]) throws IOException{
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String line = bf.readLine();
-        if (line == null || line.trim().isEmpty()) {
-            System.out.println(0);
+        if (line == null || line.trim() == ""){
+            System.out.println(0); 
             return;
         }
-        String[] s = line.trim().split(" ");
-        System.out.println(s.length);
+        line = line.trim();
+        int count = 1;
+        for (int i = 0; i < line.length(); i++){
+            if(line.charAt(i) == ' '){
+                count += 1;
+            }
+        }
+        System.out.println(count);
     }
 }

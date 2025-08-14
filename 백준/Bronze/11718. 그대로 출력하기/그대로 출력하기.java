@@ -3,10 +3,10 @@ import java.io.*;
 class Main{
     public static void main(String[] args) throws IOException{
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        String output = bf.readLine();
-        while(output != null){
+        while(true){
+            String output = bf.readLine();
+            if(output == null) {break;}
             System.out.println(output);
-            output = bf.readLine();
         }
     }
 }

@@ -27,14 +27,9 @@ class Main{
 
         for(int i = 0; i < input_n; i++){
             for(int j = 0; j < input_m; j++){
-                System.out.print((A_arr[i][j] + B_arr[i][j]));
-                if(j < input_m - 1){
-                    System.out.print(" ");
-                }
+                System.out.print((A_arr[i][j] + B_arr[i][j]) + " ");
             }
-            if(i < input_n - 1){
-                System.out.println("");
-            }
+            System.out.println("");
         }
     }
 }
